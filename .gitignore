@@ -1,32 +1,222 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include<iostream>
+#include<windows.h>
+#include<string.h>
+using namespace std;
+class message
+{
+	public:
+		int n,keylen;
+	void Sendtxt(char key[1000])
+	{	
+		cout<<endl<<"How many times do you want to simulate : ";
+		cin>>n;
+		
+		string str(key);
+		keylen=str.length();
+		system("start notepad");
+		Sleep(2000);
+		for(int j=0;j<=n-1;j++)
+		{
+			Sleep(300);
+			for(int i=0;i<=keylen;i++)
+			{	//for key A
+				if((key[i]=='a')||(key[i]=='A'))
+				{
+					keybd_event( 0x41,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x41,0,KEYEVENTF_KEYUP,0);
+//					cout<<endl<<"have";
+				}
+				if((key[i]=='B')||(key[i]=='b'))
+				{
+					keybd_event( 0x42,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x42,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='C')||(key[i]=='c'))
+				{
+					keybd_event( 0x43,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x43,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='D')||(key[i]=='d'))
+				{
+					keybd_event( 0x44,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x44,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='E')||(key[i]=='e'))
+				{
+					keybd_event( 0x45,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x45,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='F')||(key[i]=='f'))
+				{
+					keybd_event( 0x46,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x46,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='G')||(key[i]=='g'))
+				{
+					keybd_event( 0x47,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x47,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='H')||(key[i]=='h'))
+				{
+					keybd_event( 0x48,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x48,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='I')||(key[i]=='i'))
+				{
+					keybd_event( 0x49,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x49,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='J')||(key[i]=='j'))
+				{
+					keybd_event( 0x4A,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4A,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='K')||(key[i]=='k'))
+				{
+					keybd_event( 0x4B,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4B,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='L')||(key[i]=='l'))
+				{
+					keybd_event( 0x4C,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4C,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='M')||(key[i]=='m'))
+				{
+					keybd_event( 0x4D,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4D,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='N')||(key[i]=='n'))
+				{
+					keybd_event( 0x4E,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4E,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='O')||(key[i]=='o'))
+				{
+					keybd_event( 0x4F,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x4F,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='P')||(key[i]=='p'))
+				{
+					keybd_event( 0x50,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x50,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='Q')||(key[i]=='q'))
+				{
+					keybd_event( 0x51,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x51,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='R')||(key[i]=='r'))
+				{
+					keybd_event( 0x52,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x52,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='S')||(key[i]=='s'))
+				{
+					keybd_event( 0x53,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x53,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='T')||(key[i]=='t'))
+				{
+					keybd_event( 0x54,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x54,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='U')||(key[i]=='u'))
+				{
+					keybd_event( 0x55,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x55,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='V')||(key[i]=='v'))
+				{
+					keybd_event( 0x56,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x56,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='W')||(key[i]=='W'))
+				{
+					keybd_event( 0x57,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x57,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='X')||(key[i]=='x'))
+				{
+					keybd_event( 0x58,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x58,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='Y')||(key[i]=='y'))
+				{
+					keybd_event( 0x59,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x59,0,KEYEVENTF_KEYUP,0);
+				}
+				if((key[i]=='Z')||(key[i]=='Z'))
+				{
+					keybd_event( 0x5A,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x5A,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='0')
+				{
+					keybd_event( 0x30,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x30,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='1')
+				{
+					keybd_event( 0x31,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x31,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='2')
+				{
+					keybd_event( 0x32,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x32,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='3')
+				{
+					keybd_event( 0x33,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x33,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='4')
+				{
+					keybd_event( 0x34,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x34,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='5')
+				{
+					keybd_event( 0x35,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x35,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='6')
+				{
+					keybd_event( 0x36,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x36,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='7')
+				{
+					keybd_event( 0x37,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x37,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='8')
+				{
+					keybd_event( 0x38,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x38,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]=='9')
+				{
+					keybd_event( 0x39,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x39,0,KEYEVENTF_KEYUP,0);
+				}
+				if(key[i]==' ')
+				{
+					keybd_event( 0x20,0,KEYEVENTF_EXTENDEDKEY,0);
+					keybd_event( 0x20,0,KEYEVENTF_KEYUP,0);
+				}
+			}
+			keybd_event(0x0D,0,KEYEVENTF_EXTENDEDKEY,0);
+			keybd_event(0x0D,0,KEYEVENTF_KEYUP,0);
+		}	
+	}	
+};
+main()
+{	
+	char  key[1000];
+	cout<<endl<<"Enter a message to simulate : ";
+	gets(key);
+	message ob;
+	ob.Sendtxt(key);
+}
